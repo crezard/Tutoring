@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
     formData.phone.trim().length > 0 &&
     agreedToPrivacy;
 
-  const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleSubmit = async () => {
     setValidationError(null);
     
     // 이중 안전장치 (버튼이 활성화되어 눌렸을 때만 실행됨)
