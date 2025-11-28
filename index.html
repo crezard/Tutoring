@@ -11,7 +11,21 @@
         font-family: 'Noto Sans KR', sans-serif;
       }
     </style>
-<script type="importmap">
+    <script>
+      window.addEventListener('error', function(event) {
+        const errorContainer = document.getElementById('root');
+        if (errorContainer) {
+          errorContainer.innerHTML = `
+            <div style="padding: 20px; color: red; background: #fff0f0; border: 1px solid red; margin: 20px; border-radius: 8px;">
+              <h2 style="margin-top: 0;">Application Error</h2>
+              <pre style="white-space: pre-wrap;">${event.message}</pre>
+              <p style="font-size: 0.8em; margin-top: 10px;">Check console for more details.</p>
+            </div>
+          `;
+        }
+      });
+    </script>
+  <script type="importmap">
 {
   "imports": {
     "react": "https://aistudiocdn.com/react@^19.2.0",
@@ -26,6 +40,6 @@
 </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>

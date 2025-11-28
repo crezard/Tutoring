@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { submitConsultation } from '../services/sheetService';
+import { submitConsultation } from '../services/sheetService.ts';
 
 const goalLabels: Record<string, string> = {
   'grammar': '문법 기초 부족',

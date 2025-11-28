@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { generateQuiz } from '../services/geminiService';
-import { submitTestResult } from '../services/sheetService';
-import { QuizQuestion } from '../types';
+import { generateQuiz } from '../services/geminiService.ts';
+import { submitTestResult } from '../services/sheetService.ts';
+import { QuizQuestion } from '../types.ts';
 
 const AIGrammarCheck: React.FC = () => {
   const [grade, setGrade] = useState<string | null>(null);

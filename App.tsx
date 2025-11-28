@@ -1,12 +1,12 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import About from './components/About';
-import AIGrammarCheck from './components/AIGrammarCheck';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import ClassInfo from './components/ClassInfo';
+import Navbar from './components/Navbar.tsx';
+import Hero from './components/Hero.tsx';
+import Features from './components/Features.tsx';
+import About from './components/About.tsx';
+import AIGrammarCheck from './components/AIGrammarCheck.tsx';
+import Contact from './components/Contact.tsx';
+import Footer from './components/Footer.tsx';
+import ClassInfo from './components/ClassInfo.tsx';
 
 const App: React.FC = () => {
   return (

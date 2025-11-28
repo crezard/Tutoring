@@ -1,5 +1,5 @@
 import { GoogleGenAI, Type } from "@google/genai";
-import { AIResponse, QuizQuestion } from "../types";
+import { AIResponse, QuizQuestion } from "../types.ts";
 
 // Initialize AI with API key from environment variables
 // Using Vite's import.meta.env for browser compatibility
