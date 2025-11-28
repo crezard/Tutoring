@@ -3,7 +3,8 @@ import { AIResponse, QuizQuestion } from "../types";
 
 // Initialize AI with API key from environment variables
 // Using Vite's import.meta.env for browser compatibility
-const apiKey = import.meta.env.VITE_API_KEY;
+// Use optional chaining to prevent crashes if env is undefined
+const apiKey = import.meta.env?.VITE_API_KEY || "";
 const ai = new GoogleGenAI({ apiKey: apiKey });
 
 export const checkGrammarWithAI = async (text: string): Promise<AIResponse> => {
