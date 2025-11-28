@@ -1,6 +1,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { AIResponse, QuizQuestion } from "../types";
 
+// Initialize AI with API key from environment variables
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export const checkGrammarWithAI = async (text: string): Promise<AIResponse> => {
