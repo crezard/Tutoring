@@ -30,9 +30,9 @@ const Navbar: React.FC = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 items-center">
           <button onClick={() => scrollToSection('class-info')} className={`font-medium hover:text-blue-500 transition-colors ${isScrolled ? 'text-gray-700' : 'text-white/90'}`}>과외개요</button>
-          <button onClick={() => scrollToSection('curriculum')} className={`font-medium hover:text-blue-500 transition-colors ${isScrolled ? 'text-gray-700' : 'text-white/90'}`}>커리큘럼</button>
-          <button onClick={() => scrollToSection('ai-test')} className={`font-medium hover:text-blue-500 transition-colors ${isScrolled ? 'text-gray-700' : 'text-white/90'}`}>AI 실력 테스트</button>
           <button onClick={() => scrollToSection('about')} className={`font-medium hover:text-blue-500 transition-colors ${isScrolled ? 'text-gray-700' : 'text-white/90'}`}>특징</button>
+          <button onClick={() => scrollToSection('ai-test')} className={`font-medium hover:text-blue-500 transition-colors ${isScrolled ? 'text-gray-700' : 'text-white/90'}`}>AI 실력 테스트</button>
+          <button onClick={() => scrollToSection('curriculum')} className={`font-medium hover:text-blue-500 transition-colors ${isScrolled ? 'text-gray-700' : 'text-white/90'}`}>커리큘럼</button>
           <button 
             onClick={() => scrollToSection('contact')}
             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
@@ -56,9 +56,9 @@ const Navbar: React.FC = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 px-6 flex flex-col space-y-4">
            <button onClick={() => scrollToSection('class-info')} className="text-gray-800 font-medium text-left py-2 border-b border-gray-100">과외개요</button>
-           <button onClick={() => scrollToSection('curriculum')} className="text-gray-800 font-medium text-left py-2 border-b border-gray-100">커리큘럼</button>
-           <button onClick={() => scrollToSection('ai-test')} className="text-gray-800 font-medium text-left py-2 border-b border-gray-100">AI 실력 테스트</button>
            <button onClick={() => scrollToSection('about')} className="text-gray-800 font-medium text-left py-2 border-b border-gray-100">특징</button>
+           <button onClick={() => scrollToSection('ai-test')} className="text-gray-800 font-medium text-left py-2 border-b border-gray-100">AI 실력 테스트</button>
+           <button onClick={() => scrollToSection('curriculum')} className="text-gray-800 font-medium text-left py-2 border-b border-gray-100">커리큘럼</button>
            <button onClick={() => scrollToSection('contact')} className="text-gray-800 font-medium text-left py-2 border-b border-gray-100">상담문의</button>
         </div>
       )}

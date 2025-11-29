@@ -34,14 +34,14 @@ const App: React.FC = () => {
         {/* 1. 과외 개요 */}
         <ClassInfo />
 
-        {/* 2. 커리큘럼 (Features) */}
-        <Features />
+        {/* 2. 특징 (About) - 위치 변경됨 */}
+        <About />
         
         {/* 3. AI 실력 테스트 */}
         <AIGrammarCheck />
 
-        {/* 4. 특징 (About) */}
-        <About />
+        {/* 4. 커리큘럼 (Features) - 위치 변경됨 */}
+        <Features />
         
         {/* 5. 상담 문의 */}
         <Contact />

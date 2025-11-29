@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
     define: {
       // Define process.env.API_KEY so it can be used in the browser code
       'process.env.API_KEY': JSON.stringify(env.VITE_API_KEY),
-      // Polyfill for libraries interacting with process.env
+      // Polyfill for libraries interacting with process.env to prevent "process is not defined"
       'process.env': {}
     }
   };
