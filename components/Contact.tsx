@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
     formData.phone.trim().length > 0 &&
     agreedToPrivacy;
 
-  const handleSubmit = async () => {
+  const handleSubmit = () => {
     setValidationError(null);
     
     // 이중 안전장치 (버튼이 활성화되어 눌렸을 때만 실행됨)
@@ -50,14 +50,14 @@ const Contact: React.FC = () => {
       message: formData.message
     };
 
-    const success = await submitConsultation(dataToSend);
-
-    setIsSubmitting(false);
-    if (success) {
-      setSubmitted(true);
-    } else {
-      window.alert('전송 중 문제가 발생했습니다. 다시 시도해주세요.');
-    }
+    submitConsultation(dataToSend).then(success => {
+        setIsSubmitting(false);
+        if (success) {
+            setSubmitted(true);
+        } else {
+            window.alert('전송 중 문제가 발생했습니다. 다시 시도해주세요.');
+        }
+    });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -66,7 +66,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-16 md:py-24 bg-white">
+    <section id="contact" className="pt-8 md:pt-12 pb-16 md:pb-24 bg-white">
       <div className="container mx-auto px-4 md:px-6 max-w-5xl">
         <div className="bg-blue-900 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
           

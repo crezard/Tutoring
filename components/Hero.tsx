@@ -24,28 +24,6 @@ const Hero: React.FC = () => {
               (총 12회 완성)
             </span>
           </h1>
-          
-          {/* Info Box */}
-          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 md:p-8 mb-8 md:mb-12 max-w-3xl text-left mx-auto md:mx-0 shadow-lg">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-8 md:gap-y-6 text-gray-100 text-sm md:text-lg">
-              <div className="flex items-center gap-3">
-                <span className="text-blue-400 text-xl">🎯</span>
-                <span><strong className="text-white font-semibold">대상:</strong> 중학교 1~3학년</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="text-blue-400 text-xl">📅</span>
-                <span><strong className="text-white font-semibold">기간:</strong> 1월~2월 (6주 / 총 12회)</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="text-blue-400 text-xl">⏰</span>
-                <span><strong className="text-white font-semibold">시간:</strong> 오전 10시~12시 (조율 가능)</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="text-blue-400 text-xl">📍</span>
-                <span><strong className="text-white font-semibold">장소:</strong> 3단지 래미안슈르아파트</span>
-              </div>
-            </div>
-          </div>
 
           <p className="text-base md:text-xl text-gray-300 mb-8 md:mb-10 leading-relaxed max-w-2xl md:max-w-none mx-auto md:mx-0 break-keep md:whitespace-nowrap">
             겨울방학, 12회 완성 프로그램으로 우리 아이 영문법 기초를 확실하게 다져드립니다.

@@ -55,7 +55,7 @@ const Features: React.FC = () => {
   const [activeTab, setActiveTab] = useState('중1');
 
   return (
-    <section id="curriculum" className="py-16 md:py-24 bg-white">
+    <section id="curriculum" className="pt-16 md:pt-24 pb-8 md:pb-12 bg-white">
       <div className="container mx-auto px-4 md:px-6 max-w-6xl">
         <div className="text-center mb-10 md:mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mt-2 break-keep">12회 완성 문법 커리큘럼</h2>

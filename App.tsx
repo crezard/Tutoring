@@ -34,13 +34,14 @@ const App: React.FC = () => {
         {/* Class Info Section */}
         <ClassInfo />
 
+        {/* Swapped Order: About (Features) comes before AI Test and Curriculum */}
+        <About />
+        
+        <AIGrammarCheck />
+        
         {/* Curriculum Section */}
         <Features />
         
-        {/* Swapped Order: AI Test after Curriculum */}
-        <AIGrammarCheck />
-        
-        <About />
         <Contact />
       </main>
       <Footer />
