@@ -128,14 +128,14 @@ const AIGrammarCheck: React.FC = () => {
   };
 
   return (
-    <section id="ai-test" className="py-16 md:py-24 bg-gradient-to-br from-gray-900 to-blue-900 text-white relative overflow-hidden min-h-[800px] flex items-center">
+    <section id="ai-test" className="py-12 bg-gradient-to-br from-gray-900 to-blue-900 text-white relative overflow-hidden min-h-[600px] flex items-center">
       {/* Decorative Circles */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-8 md:mb-12">
+          <div className="text-center mb-8">
             <div className="inline-block px-4 py-2 bg-blue-500/20 rounded-full text-blue-300 font-semibold text-xs md:text-sm mb-4 border border-blue-500/30">
               Google Gemini AI 기반
             </div>

@@ -66,7 +66,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="pt-8 md:pt-12 pb-16 md:pb-24 bg-white">
+    <section id="contact" className="pt-8 pb-12 bg-white">
       <div className="container mx-auto px-4 md:px-6 max-w-5xl">
         <div className="bg-blue-900 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
           

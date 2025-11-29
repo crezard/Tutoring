@@ -55,9 +55,9 @@ const Features: React.FC = () => {
   const [activeTab, setActiveTab] = useState('중1');
 
   return (
-    <section id="curriculum" className="pt-16 md:pt-24 pb-8 md:pb-12 bg-white">
+    <section id="curriculum" className="pt-12 pb-8 bg-white">
       <div className="container mx-auto px-4 md:px-6 max-w-6xl">
-        <div className="text-center mb-10 md:mb-16">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mt-2 break-keep">12회 완성 문법 커리큘럼</h2>
           <p className="text-gray-500 mt-4 text-sm md:text-lg break-keep">
             <span className="font-semibold text-blue-600">기출로 적중! 해커스 중학영문법</span> 교재를 기반으로<br/>
@@ -66,7 +66,7 @@ const Features: React.FC = () => {
         </div>
 
         {/* Tabs */}
-        <div className="flex justify-center mb-8 md:mb-12">
+        <div className="flex justify-center mb-8">
           <div className="flex bg-gray-100 p-1 rounded-xl w-full md:w-auto overflow-x-auto">
             {['중1', '중2', '중3'].map((grade) => (
               <button

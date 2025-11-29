@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden py-24 md:py-0">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden py-12 md:py-20">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
             </span>
           </h1>
 
-          <p className="text-base md:text-xl text-gray-300 mb-8 md:mb-10 leading-relaxed max-w-2xl md:max-w-none mx-auto md:mx-0 break-keep md:whitespace-nowrap">
+          <p className="text-base md:text-xl text-gray-300 mb-6 leading-relaxed max-w-2xl md:max-w-none mx-auto md:mx-0 break-keep md:whitespace-nowrap">
             겨울방학, 12회 완성 프로그램으로 우리 아이 영문법 기초를 확실하게 다져드립니다.
           </p>
           

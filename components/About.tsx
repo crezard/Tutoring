@@ -41,11 +41,11 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="py-16 md:py-24 bg-gray-50">
+    <section id="about" className="py-12 bg-gray-50">
       <div className="container mx-auto px-6">
         
         {/* Header */}
-        <div className="text-center mb-12 md:mb-16">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mt-2 leading-tight break-keep">
             재미있고 명쾌하고 스마트한 수업
           </h2>
@@ -56,13 +56,13 @@ const About: React.FC = () => {
 
         {/* 6 Feature Cards Grid */}
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature) => (
-              <div key={feature.id} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center h-full">
-                <div className="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center text-3xl mb-6 shadow-inner">
+              <div key={feature.id} className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center h-full">
+                <div className="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center text-3xl mb-4 shadow-inner">
                   {feature.icon}
                 </div>
-                <h3 className="font-bold text-gray-900 text-xl mb-4 break-keep">
+                <h3 className="font-bold text-gray-900 text-xl mb-3 break-keep">
                   {feature.title}
                 </h3>
                 <p className="text-gray-600 text-sm md:text-base leading-relaxed break-keep">

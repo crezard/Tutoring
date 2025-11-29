@@ -31,17 +31,19 @@ const App: React.FC = () => {
       <main>
         <Hero />
         
-        {/* Class Info Section */}
+        {/* 1. 과외 개요 */}
         <ClassInfo />
 
-        {/* Swapped Order: About (Features) comes before AI Test and Curriculum */}
-        <About />
-        
-        <AIGrammarCheck />
-        
-        {/* Curriculum Section */}
+        {/* 2. 커리큘럼 (Features) */}
         <Features />
         
+        {/* 3. AI 실력 테스트 */}
+        <AIGrammarCheck />
+
+        {/* 4. 특징 (About) */}
+        <About />
+        
+        {/* 5. 상담 문의 */}
         <Contact />
       </main>
       <Footer />
