@@ -19,7 +19,7 @@ export interface ConsultationData {
 
 // ⚠️ 중요: 이 URL을 본인의 Google Apps Script 배포 URL로 교체해야 합니다.
 // Google Sheet > 확장 프로그램 > Apps Script > 배포 > 새 배포 > 웹 앱 > 권한: '모든 사용자'
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxcKTjkug15tuA0vb6XCbmpw0hJYfNWgzLabQFf7d2hpe14ZawZigg5Je-PMFprk1JHGA/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby9ApW4jg0fop4ZmRBRJ7e6V7lzDcLTmMyI0ms-3f_xlQqu2a4P2DXNv7efW3bFbOmYBg/exec';
 
 const submitData = async (payload: any): Promise<boolean> => {
   try {
